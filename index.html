@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script>
+    document.addEventListener('DOMContentLoaded', AOS.init);
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+    body {
+      background: #fdfdfd;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      padding: 3rem 1rem;
+      text-align: center;
+      color: white;
+      border-radius: 0 0 2rem 2rem;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-bottom: 1.2rem;
+    }
+    .btn {
+      background: white;
+      color: #667eea;
+      padding: 0.6rem 1.5rem;
+      border-radius: 999px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #f0f0f0;
+    }
+    section {
+      padding: 2.5rem 1rem;
+      max-width: 600px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: #333;
+    }
+    .card, .project, .edu-card, .intern-card {
+      background: white;
+      border-radius: 1rem;
+      padding: 1.2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+    .card:hover, .project:hover, .edu-card:hover, .intern-card:hover {
+      transform: translateY(-5px);
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.7rem;
+      justify-content: center;
+    }
+    .skill-badge {
+      background: #e0e7ff;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+    }
+    form button {
+      background: #667eea;
+      color: white;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 0.5rem;
+      width: 100%;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    form button:hover {
+      background: #556cd6;
+    }
+    footer {
+      text-align: center;
+      padding: 1.5rem 1rem;
+      font-size: 0.85rem;
+      color: #888;
+    }
+    @media(min-width: 768px) {
+      header h1 {
+        font-size: 2.8rem;
+      }
+      header p {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Hero Section -->
+  <header id="hero">
+    <h1>Hello, I'm Suyog Sawadatkar</h1>
+    <p>Microsoft Dynamics 365 Enthusiast | Trained in CRM Customization | Open to opportunities </p>
+    <a href="#projects" class="btn">View Projects</a>
+  </header>
+
+  <!-- About Me -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p style="text-align:center;"> I have recently completed my B.Tech in Information Technology, where I built hands-on experience in software development, database management, and business process automation. I'm now focused on specializing in Dynamics 365 Customer Engagement and Power Platform tools like Power Apps, Power Automate, and Dataverse... I’m passionate about solving business challenges through smart CRM solutions, and I’m eager to contribute to a dynamic team where I can grow as a CRM Developer and make an impact from day one</p>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2 class="section-title">Education</h2>
+    <div class="edu-card">
+      <h3>H.S.C</h3>
+      <p>Sant Gadge Baba Amravati University | 2018 - 2020</p>
+    </div>
+    <div class="edu-card">
+      <h3>Bachelor of Engineering in Information Technology</h3>
+      <p>Savitribai Phule Pune University | 2020 - 2024</p>
+    </div>
+  </section>
+
+  <!-- Internship -->
+  <section id="internship">
+    <h2 class="section-title">Internship</h2>
+    <div class="intern-card">
+      <h3>Data Process Intern</h3>
+      <p>Jan 2023 - Aug 2023</p>
+      <p>AGRICULTURE INSURANCE COMPANY OF INDIA LIMITED.</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="project">
+      <h3>E-Commerce Product Recommendation System</h3>
+      <p> It is an ecommerce application with Personalize product recommendations. features: allow customers to browse products and add to their cart. show personalized recommendations based on purchases history or browsing behavior. Implement automated discount offers using workflows and process automation.</p>
+      <p><strong>Skill used:</strong> Salesforce Sales Cloud, APEX, Lightning Web component Development, SQL </p>
+    </div>
+    <div class="project">
+      <h3>Credit Card Fraud Detection</h3>
+      <p> Machine learning based system to detect credit card fraud by analyzing transaction patterns, identifying anomalies, and classifying transaction as legitimate or fraudulent in real time.</p>
+      <p><strong></strong></p>
+      
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div class="skill-badge">Microsoft Dynamics CRM</div>
+      <div class="skill-badge">SQL Server Reporting Services (SSRS)</div>
+      <div class="skill-badge">Microsoft SQL Server</div>
+      <div class="skill-badge">.NET Framework</div>
+      <div class="skill-badge">Microsoft Power BI</div>
+      <div class="skill-badge">Salesforce Service Cloud</div>
+      <div class="skill-badge">Python (Programming Language)</div>
+	<div class="skill-badge">HTML</div>
+	<div class="skill-badge">CSS</div>
+	<div class="skill-badge">Javascript</div>
+	<div class="skill-badge">SQL</div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p style="text-align:center; margin-top:1rem;">
+      <a href="#">LinkedIn</a> | <a href="#">Mail</a>
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Suyog Sawadatkar. All rights reserved.
+  </footer>
+</body>
+</html>
